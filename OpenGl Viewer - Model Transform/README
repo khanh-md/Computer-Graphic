@@ -1,0 +1,19 @@
+Make sure the "include" folder contain the header files for GLFW and GLEW, 
+and the "lib" folder contain the .lib files for those libraries.
+
+The dll files for GLFW and GLEW should be in the same directory as the program.
+
+To run the code, change the paths in the makefile to point to the "include" and "lib" folder
+inside this directory. Then, in terminal, type:
+- make 
+
+
+This will run the program and open a window that show the result.
+
+If makefile does not work, run this command manually (change the paths correspondingly):
+- g++ -g -std=c++17 -o "filename".exe -IC:\path\to\cap5705_a2\include -LC:\path\to\cap5705_a2\lib "filename".cpp -lglew32 -lglfw3dll -lopengl32
+
+
+helloTriangle.cpp is for question 1
+object.cpp is for question 2,3,4. benchmark.cpp is for benchmarking question 4
+rotate.cpp is for question 5.
